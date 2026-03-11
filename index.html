@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busco tu Renta by Jocelyn | Bienes Raíces de Lujo</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top nav-glass">
+        <div class="container">
+            <a class="navbar-brand py-0" href="#">
+                <img src="img/logo-jocelyn-premium.png" alt="Logo Busco Tu Renta" class="logo-nav">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center text-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#propiedades">Propiedades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre Mí</a></li>
+                    <li class="nav-item mt-3 mt-lg-0 ms-lg-4">
+                        <a class="nav-link btn-whatsapp-menu shadow-sm" href="https://wa.me/18492508144?text=Hola%20Jocelyn,%20vengo%20de%20tu%20web%20y%20quiero%20asesoría." target="_blank">Contactar a Jocelyn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section d-flex align-items-center">
+        <div class="container text-center hero-content reveal">
+            <h1 class="display-3 fw-bold mb-4 titulo-lujo">Encuentra el hogar que mereces.</h1>
+            <p class="lead mb-5 fw-light mx-auto" style="max-width: 800px;">Asesoría inmobiliaria exclusiva en República Dominicana. Tu tranquilidad y tu inversión en las manos más profesionales del mercado.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="#propiedades" class="btn btn-esmeralda btn-lg shadow-lg px-5">Ver Catálogo</a>
+                <a href="https://wa.me/18492508144" class="btn btn-outline-light btn-lg rounded-pill px-5" target="_blank">WhatsApp Directo</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="propiedades" class="py-5 bg-onice">
+        <div class="container py-5">
+            <div class="text-center mb-5 reveal">
+                <h2 class="fw-bold texto-esmeralda mb-2 display-5">Propiedades Exclusivas</h2>
+                <div class="divisor-esmeralda mx-auto mb-4"></div>
+                <p class="text-light fw-light">Haga clic para ver detalles y fotos interiores.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 tarjeta-luxury">
+                        <div class="img-hover-zoom">
+                            <img src="img/casa1.jpg" class="propiedad-img" alt="Propiedad Premium">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold texto-esmeralda">Penthouse Premium</h5>
+                            <p class="small text-secondary mb-4">📍 Piantini, Santo Domingo</p>
+                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light">
+                                <span>🛏️ 3 Hab</span>
+                                <span>🛁 3.5 Baños</span>
+                            </div>
+                            <button class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#galeriaModal">Ver Galería</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 tarjeta-luxury">
+                        <div class="img-hover-zoom">
+                            <img src="img/casa2.jpg" class="propiedad-img" alt="Apartamento Moderno">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold texto-esmeralda">Apartamento Moderno</h5>
+                            <p class="small text-secondary mb-4">📍 Naco, Santo Domingo</p>
+                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light">
+                                <span>🛏️ 2 Hab</span>
+                                <span>🛁 2 Baños</span>
+                            </div>
+                            <button class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#galeriaModal">Ver Galería</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 tarjeta-luxury">
+                        <div class="img-hover-zoom">
+                            <img src="img/casa3.jpg" class="propiedad-img" alt="Casa Familiar">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold texto-esmeralda">Casa Familiar</h5>
+                            <p class="small text-secondary mb-4">📍 Arroyo Hondo</p>
+                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light">
+                                <span>🛏️ 4 Hab</span>
+                                <span>🛁 3 Baños</span>
+                            </div>
+                            <button class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#galeriaModal">Ver Galería</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-5 bg-gris-lujo overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center text-center text-lg-start">
+                <div class="col-lg-5 mb-5 mb-lg-0 position-relative reveal">
+                    <div class="perfil-luxury-container shadow-lg mx-auto">
+                        <img src="img/perfil-jocelyn.png" alt="Jocelyn Asesora Inmobiliaria" class="foto-jocelyn-png">
+                    </div>
+                </div>
+                <div class="col-lg-7 text-light ps-lg-5 reveal">
+                    <h2 class="fw-bold texto-esmeralda mb-2 display-6">Tu Aliada Estratégica</h2>
+                    <h4 class="text-white mb-4 fw-light">Jocelyn - Asesora Inmobiliaria</h4>
+                    <p class="lead mb-4 fw-light text-white-50" style="line-height: 1.8;">
+                        Con un enfoque 100% personalizado y un conocimiento profundo del mercado premium en República Dominicana, mi compromiso es guiarte paso a paso con absoluta transparencia y confidencialidad. 
+                    </p>
+                    <p class="mb-5 text-white-50 fw-light">
+                        No solo busco una propiedad para ti, encuentro el espacio donde construirás tu futuro o asegurarás tu inversión. Estoy contigo para garantizar que tomes la mejor decisión.
+                    </p>
+                    <a href="https://wa.me/18492508144" class="btn btn-esmeralda px-5 py-3 shadow-lg fw-bold" target="_blank">Agendar Asesoría Gratuita</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center bg-black border-top border-secondary">
+        <div class="container">
+            <img src="img/logo-jocelyn-premium.png" alt="Logo Footer" class="mb-4 opacity-50" style="max-height: 40px;">
+            <p class="mb-1 text-secondary fw-light">© 2026 Busco tu Renta by Jocelyn. Todos los derechos reservados.</p>
+            <p class="small text-secondary">Diseñado y Desarrollado por <span class="texto-esmeralda fw-bold">IntegratCore</span></p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="galeriaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-onice border-esmeralda rounded-4 overflow-hidden">
+                <div class="modal-body p-0 text-center">
+                    <img src="img/casa1.jpg" class="img-fluid w-100" alt="Vista">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // SCRIPT PARA REVELAR ELEMENTOS AL DESLIZAR
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Ejecutar una vez al cargar para elementos que ya están visibles
+        reveal();
+    </script>
+</body>
+</html>
