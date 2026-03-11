@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busco tu Renta by Jocelyn | Bienes Raíces de Lujo</title>
     
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -48,23 +50,47 @@
             <div class="text-center mb-5 reveal">
                 <h2 class="fw-bold texto-esmeralda mb-2 display-5">Propiedades Exclusivas</h2>
                 <div class="divisor-esmeralda mx-auto mb-4"></div>
-                <p class="text-light fw-light">Haga clic para ver detalles y fotos interiores.</p>
+                <p class="text-light fw-light">Haga clic en una propiedad para solicitar información detallada.</p>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4" id="lista-propiedades">
+                
                 <div class="col-md-4 reveal">
                     <div class="card h-100 tarjeta-luxury">
                         <div class="img-hover-zoom">
-                            <img src="img/casa1.jpg" class="propiedad-img" alt="Propiedad Premium">
+                            <span class="badge bg-esmeralda position-absolute m-3 shadow">Oportunidad de Inversión</span>
+                            <img src="img/villa-casa-de-campo.jpg" class="propiedad-img" alt="Villa Casa de Campo">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold texto-esmeralda">Moderna Villa en el Bosque</h5>
+                            <p class="small text-secondary mb-2">📍 Casa de Campo, La Romana</p>
+                            <p class="fw-bold text-white mb-3">US$ 2,980,000</p>
+                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light small">
+                                <span>🛏️ 5 Hab</span>
+                                <span>🛁 5.5 Baños</span>
+                                <span>📏 400 m²</span>
+                            </div>
+                            <a href="https://wa.me/18492508144?text=Hola%20Jocelyn,%20me%20interesa%20la%20Villa%20en%20Casa%20de%20Campo%20(Ref:%20MACAW7LAVF)" target="_blank" class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold">Solicitar Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 tarjeta-luxury">
+                        <div class="img-hover-zoom">
+                            <span class="badge bg-warning text-dark position-absolute m-3 shadow">Premium</span>
+                            <img src="img/penthouse-social.jpg" class="propiedad-img" alt="Penthouse en Piantini">
                         </div>
                         <div class="card-body p-4 d-flex flex-column">
                             <h5 class="fw-bold texto-esmeralda">Penthouse Premium</h5>
-                            <p class="small text-secondary mb-4">📍 Piantini, Santo Domingo</p>
-                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light">
+                            <p class="small text-secondary mb-2">📍 Piantini, Distrito Nacional</p>
+                            <p class="fw-bold text-white mb-3">Bajo Consulta</p>
+                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light small">
                                 <span>🛏️ 3 Hab</span>
                                 <span>🛁 3.5 Baños</span>
+                                <span>🏋️ Gym & Lounge</span>
                             </div>
-                            <button class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#galeriaModal">Ver Galería</button>
+                            <a href="https://wa.me/18492508144?text=Hola%20Jocelyn,%20quiero%20ver%20la%20galería%20del%20Penthouse%20en%20Piantini" target="_blank" class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold">Ver Galería Real</a>
                         </div>
                     </div>
                 </div>
@@ -72,16 +98,56 @@
                 <div class="col-md-4 reveal">
                     <div class="card h-100 tarjeta-luxury">
                         <div class="img-hover-zoom">
-                            <img src="img/casa2.jpg" class="propiedad-img" alt="Apartamento Moderno">
+                            <img src="img/villa-puerta-mamey.jpg" class="propiedad-img" alt="Villa Montaña">
                         </div>
                         <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="fw-bold texto-esmeralda">Apartamento Moderno</h5>
-                            <p class="small text-secondary mb-4">📍 Naco, Santo Domingo</p>
-                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light">
+                            <h5 class="fw-bold texto-esmeralda">Villa Vista Montaña (Mamey)</h5>
+                            <p class="small text-secondary mb-2">📍 Proyecto Exclusivo</p>
+                            <p class="fw-bold text-white mb-3">US$ 375,000</p>
+                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light small">
+                                <span>🛏️ 3 Hab</span>
+                                <span>🛁 2.5 Baños</span>
+                                <span>📏 380 m²</span>
+                            </div>
+                            <a href="https://wa.me/18492508144?text=Hola%20Jocelyn,%20me%20interesa%20la%20Villa%20Puerta%20Mamey" target="_blank" class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold">Me Interesa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 tarjeta-luxury">
+                        <div class="img-hover-zoom">
+                            <img src="img/villa-puerta-azul.jpg" class="propiedad-img" alt="Villa Montaña">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold texto-esmeralda">Villa Premium (Azul)</h5>
+                            <p class="small text-secondary mb-2">📍 Proyecto Exclusivo</p>
+                            <p class="fw-bold text-white mb-3">US$ 380,000</p>
+                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light small">
+                                <span>🛏️ 3 Hab</span>
+                                <span>🛁 2.5 Baños</span>
+                                <span>📏 380 m²</span>
+                            </div>
+                            <a href="https://wa.me/18492508144?text=Hola%20Jocelyn,%20me%20interesa%20la%20Villa%20Puerta%20Azul" target="_blank" class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold">Me Interesa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 tarjeta-luxury">
+                        <div class="img-hover-zoom">
+                            <img src="img/villa-puerta-roja.jpg" class="propiedad-img" alt="Villa Montaña">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold texto-esmeralda">Villa de Montaña (Roja)</h5>
+                            <p class="small text-secondary mb-2">📍 Proyecto Exclusivo</p>
+                            <p class="fw-bold text-white mb-3">US$ 300,000</p>
+                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light small">
                                 <span>🛏️ 2 Hab</span>
-                                <span>🛁 2 Baños</span>
+                                <span>🛁 2.5 Baños</span>
+                                <span>📏 245 m²</span>
                             </div>
-                            <button class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#galeriaModal">Ver Galería</button>
+                            <a href="https://wa.me/18492508144?text=Hola%20Jocelyn,%20me%20interesa%20la%20Villa%20Puerta%20Roja" target="_blank" class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold">Me Interesa</a>
                         </div>
                     </div>
                 </div>
@@ -89,19 +155,22 @@
                 <div class="col-md-4 reveal">
                     <div class="card h-100 tarjeta-luxury">
                         <div class="img-hover-zoom">
-                            <img src="img/casa3.jpg" class="propiedad-img" alt="Casa Familiar">
+                            <img src="img/villa-puerta-verde.jpg" class="propiedad-img" alt="Villa Montaña">
                         </div>
                         <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="fw-bold texto-esmeralda">Casa Familiar</h5>
-                            <p class="small text-secondary mb-4">📍 Arroyo Hondo</p>
-                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light">
-                                <span>🛏️ 4 Hab</span>
-                                <span>🛁 3 Baños</span>
+                            <h5 class="fw-bold texto-esmeralda">Villa Eco-Luxury (Verde)</h5>
+                            <p class="small text-secondary mb-2">📍 Proyecto Exclusivo</p>
+                            <p class="fw-bold text-white mb-3">US$ 230,000</p>
+                            <div class="d-flex justify-content-between border-top border-secondary pt-3 mt-auto text-light fw-light small">
+                                <span>🛏️ 2 Hab</span>
+                                <span>🛁 2.5 Baños</span>
+                                <span>📏 245 m²</span>
                             </div>
-                            <button class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#galeriaModal">Ver Galería</button>
+                            <a href="https://wa.me/18492508144?text=Hola%20Jocelyn,%20me%20interesa%20la%20Villa%20Puerta%20Verde" target="_blank" class="btn btn-outline-esmeralda w-100 mt-4 rounded-pill fw-bold">Me Interesa</a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -120,9 +189,6 @@
                     <p class="lead mb-4 fw-light text-white-50" style="line-height: 1.8;">
                         Con un enfoque 100% personalizado y un conocimiento profundo del mercado premium en República Dominicana, mi compromiso es guiarte paso a paso con absoluta transparencia y confidencialidad. 
                     </p>
-                    <p class="mb-5 text-white-50 fw-light">
-                        No solo busco una propiedad para ti, encuentro el espacio donde construirás tu futuro o asegurarás tu inversión. Estoy contigo para garantizar que tomes la mejor decisión.
-                    </p>
                     <a href="https://wa.me/18492508144" class="btn btn-esmeralda px-5 py-3 shadow-lg fw-bold" target="_blank">Agendar Asesoría Gratuita</a>
                 </div>
             </div>
@@ -136,16 +202,6 @@
             <p class="small text-secondary">Diseñado y Desarrollado por <span class="texto-esmeralda fw-bold">IntegratCore</span></p>
         </div>
     </footer>
-
-    <div class="modal fade" id="galeriaModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content bg-onice border-esmeralda rounded-4 overflow-hidden">
-                <div class="modal-body p-0 text-center">
-                    <img src="img/casa1.jpg" class="img-fluid w-100" alt="Vista">
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -162,8 +218,18 @@
             }
         }
         window.addEventListener("scroll", reveal);
-        // Ejecutar una vez al cargar para elementos que ya están visibles
         reveal();
+
+        // Script para manejar el login del panel
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
     </script>
 </body>
 </html>
